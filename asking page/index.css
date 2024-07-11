@@ -1,0 +1,49 @@
+.body{position:absolute; width:100%; height:100%; left:0vw; top:0vw; background-image:url("images/wallpaper.jpg"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden;}
+.bottom{position:absolute; bottom:0vw; left:0vw; width:100%; height:2vw; background-color:#215fda;}
+.bottom-right{position:absolute; bottom:0vw; right:0vw; width:6%; height:1.75vw; background-color:#139cf2; display:flex; align-items:center; justify-content:center; border-left:0.1vw solid rgba(0, 0, 0, 0.5); border-top:0.1vw solid rgba(0, 0, 0, 0.5);}
+#clock{color:white; font-size:0.8vw; font-family: MSSS, monospace;}
+.bottom-left{position:absolute; width:6%; height:1.75vw; background-image:url("images/start.jpeg"); background-repeat:no-repeat; background-size:100% 100%; bottom:0vw; left:0vw;}
+.bottom-left-overlay{position:absolute; left:0vw; top:0vw; width:100%; height:100%; transition:0.1s ease-out; cursor:pointer;}
+.bottom-left-overlay:hover{background-color:rgba(0, 0, 0, 0.2); transition:0.1s ease-in;}
+.mycoputer{position:absolute; width:2vw; height:2vw; background-image:url("images/mycomputer.png"); background-repeat:no-repeat; background-size:100% 100%;}
+.mycoputer-text{color:white; font-family: 'Tahoma', 'Times New Roman', sans-serif; font-size:0.65vw; bottom:-0.9vw; left:-0.8vw; position:absolute; width:185%; cursor:pointer; user-select:none;}
+.mycoputer-overlay{display:flex; align-items:center; justify-content:center; position:absolute; width:4vw; height:4vw; left:1vw; top:0.5vw; background-color:rgba(0, 0, 0, 0); cursor:pointer;}
+.mycoputer-overlay:hover{background-color:rgba(255, 255, 255, 0.2);}
+
+.superDumbIntelligence{position:absolute; width:2vw; height:2vw; top:0.75vw; background-image:url("images/SDI.png"); background-repeat:no-repeat; background-size:100% 100%;}
+.superDumbIntelligence-text{color:white; font-family: MSSS, monospace; font-size:0.65vw; bottom:-0.95vw; left:-0.8vw; text-align:center; position:absolute; width:175%; cursor:pointer; user-select:none;}
+.superDumbIntelligence-overlay{display:flex; align-items:center; justify-content:center; position:absolute; width:4vw; height:4vw; left:1vw; top:5.2vw; background-color:rgba(0, 0, 0, 0); cursor:pointer;}
+.superDumbIntelligence-overlay:hover{background-color:rgba(255, 255, 255, 0.2);}
+
+
+.window{z-index:1000; position:absolute; top:0vw; user-select:none;}
+ .window::-webkit-scrollbar {
+            display: none;
+        }
+.ai-test{position:relative; left:1vw; width:100%; height:10%; display:flex; align-items:left; justify-content:left;}
+.ai-text{position:relative; left:0.5vw; top:0.1vw; font-size:0.7vw; line-height:1vw; width:calc(100% - 0.5vw - 2vw - 2vw); height:auto; font-family: MSSS, monospace;}
+.ai-logo{display:inline-block; width:2.5vw; height:2.5vw; background-image:url("images/ai-logo.gif"); background-repeat:no-repeat; background-size:100% 100%;}
+
+.user-test{position:relative; margin-bottom:1vw; top:0.5vw; left:1vw; width:100%; height:10%; display:flex; align-items:left; justify-content:left;}
+.user-text{position:relative; left:0.8vw; top:0.1vw; font-size:0.7vw; line-height:1vw; width:calc(100% - 0.5vw - 2vw - 2vw); height:auto; font-family: MSSS, monospace;}
+.user-logo{display:inline-block; width:2.2vw; height:2.2vw; background-image:url("images/stick-man.gif"); background-repeat:no-repeat; background-size:100% 100%;}
+
+.speech-Button{position:relative; width:2.5vw; height:2.5vw; border:0.1vw solid black; cursor:pointer; background-color:rgba(255, 0, 0, 0.2); left:calc(50% - 2.5vw); bottom:0.5vw; border-radius:50%; background-image:url("images/voice-search.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:1000;}
+
+.userSpeechTextDisplayDiv{position:relative; left:calc(10vw); display:none; align-items:center; justify-content:center; width:30vw; height:5vw; background-color:rgba(220, 224, 231, 0.8); backdrop-filter:blur(3px); overflow-x:hidden; overflow-y:auto; z-index:1000;}
+.userSpeechTextDisplayDiv::-webkit-scrollbar {
+            display: none;
+        }
+.userSpeechTextDisplayDiv-p{width:100%; top:-0.5vw; position:absolute; text-align:center; font-size:0.7vw;}
+.circle{display:inline-block; position:relative; left:-0.2vw; top:0vw; height:0.5vw; width:0.5vw; border-radius:50%; background-color:black; animation:dis-rea 0.5s infinite;}
+
+@keyframes dis-rea{
+	0%{opacity:0;}
+	50%{opacity:1;}
+	100%{opacity:0;}
+}
+
+@keyframes rot{from{transform:rotateZ(0deg); background-color:rgba(255, 0, 0, 0.2)} to{transform:rotateZ(180deg); background-color:rgba(0, 255, 0, 0.2)}}
+@keyframes rot-rev{from{transform:rotateZ(180deg); background-color:rgba(0, 255, 0, 0.2)} to{transform:rotateZ(0deg); background-color:rgba(255, 0, 0, 0.2)}}
+
+

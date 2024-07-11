@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<div class="body">
+	<div class="bottom">
+		<div class="bottom-left">
+			<div class="bottom-left-overlay"></div>
+		</div>
+		<div class="bottom-right">
+			<span id="clock"></span>
+		</div>
+	</div>
+	
+	<div class="mycoputer-overlay">
+		<div class="mycoputer">
+			<span class="mycoputer-text">My Computer</span>
+		</div>
+	</div>
+	
+	<div class="superDumbIntelligence-overlay" id="superDumbIntelligence-overlay">
+		<div class="superDumbIntelligence">
+			<span class="superDumbIntelligence-text">SDI</span>
+		</div>
+	</div>
+	
+	<div class="window" id="window" style="width: 50vw; height:40vw; display:none; overflow-y:scroll; overflow-x:hidden;">
+  		<div class="title-bar">
+    			<div class="title-bar-text">Super Dumb Intelligence</div>
+    				<div class="title-bar-controls">
+      					<button aria-label="Minimize"></button>
+      					<button aria-label="Maximize"></button>
+      					<button aria-label="Close" id="close"></button>
+    				</div>
+  			</div>
+  		<div class="window-body" id="window-body" style="">
+  			<div class="ai-test" id="ai-test">
+    				<span class="ai-logo"></span><p class="ai-text" id="ai-text">Hi There, Ask Me Anything!!</p>
+    			</div>
+    			
+    			<div class="userSpeechTextDisplayDiv" id="userSpeechTextDisplayDiv">
+    				<p class="userSpeechTextDisplayDiv-p" id="userSpeechTextDisplayDiv-p"><span class="circle" id="circle"></span></p>
+    			</div>
+  		</div>
+  		<div class="speech-Button" id="speech-Button"></div>
+	</div>
+	
+</div>
+
+<script src="index.js"></script>
+<!-- Include Anime.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</body>
+</html>
