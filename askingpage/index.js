@@ -238,3 +238,51 @@ function fadeInTextWordByWord(element) {
             delay: (el, i) => delay * i
         });
 }
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyB1AcQ8Gx0IBA57bIMv3O51kojxUlsZJEw",
+    authDomain: "heli-8370a.firebaseapp.com",
+    projectId: "heli-8370a",
+    storageBucket: "heli-8370a.appspot.com",
+    messagingSenderId: "454703904163",
+    appId: "1:454703904163:web:28e75fdc0323889c009616",
+    measurementId: "G-J3KZ1KD2JX"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// Check if user is logged in
+onAuthStateChanged(auth, (user) => {
+    if (!user) {
+        // No user is signed in, redirect to login page
+        window.location.href = "https://aditya-138-12.github.io/Heli/site/";
+    } else {
+        // User is signed in
+        console.log("User is signed in:", user);
+
+        // Display user information
+        const userInfoDiv = document.getElementById("user-info");
+        userInfoDiv.innerHTML = `
+            <p>Logged in as: ${user.email}</p>
+            <p>User ID: ${user.uid}</p>
+        `;
+    }
+});
+
+// Logout functionality
+document.getElementById("logoutBtn").addEventListener("click", () => {
+    signOut(auth).then(() => {
+        console.log("User signed out");
+        window.location.href = "https://aditya-138-12.github.io/Heli/site/";
+    }).catch((error) => {
+        console.error("Error signing out:", error);
+    });
+});
