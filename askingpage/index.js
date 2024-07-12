@@ -1,7 +1,7 @@
 /*##########################################################################*/
 async function fetchTime() {
     try {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/Asia/Kolkata');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/Asia/Kolkata');
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
