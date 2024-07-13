@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Right now you can use our version 1. If you face any security vul. Please Report to use, donot attack our systems.
+Right now you can use our version 0.1.01 . If you face any security vul. Please Report to use, donot attack our systems.
 
 | Version | Supported          |
 | ------- | ------------------ |
