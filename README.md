@@ -1,7 +1,7 @@
 # Heli Voice Powered Enquiry System
 
 ## Overview
-The Heli Voice Powered Enquiry System is designed to provide responses to inquiries posed in voice format. Powered by the LLaMma 3 model from Grok Cloud, it leverages advanced language understanding to deliver accurate and contextually relevant information in response to spoken questions.
+The Heli Voice Powered Enquiry System is designed to provide responses to inquiries posed in voice format. Powered by the LLaMma 3 model from Groq Cloud, it leverages advanced language understanding to deliver accurate and contextually relevant information in response to spoken questions.
 
 ## Features
 - Voice-driven inquiry processing
@@ -13,7 +13,7 @@ To install and set up the Heli Voice Powered Enquiry System, follow these steps:
 1. Clone the repository from GitHub:
 2. Install dependencies:
 3. Configure your environment variables and API keys as necessary.
-4. Make account on grok cloud, and set API key in you enviornment, also the step by step process is given on there website.
+4. Make account on groq cloud, and set API key in you enviornment, also the step by step process is given on there website: https://groq.com/.
 
 ## Usage
 To use the Heli Voice Powered Enquiry System:
@@ -36,7 +36,7 @@ We welcome contributions to enhance the Heli Voice Powered Enquiry System. Follo
 This project is not Licensed!!!
 
 ## Credits
-- **LLaMma 3 Model**: Hosted on Grok Cloud, provides powerful language understanding capabilities.
+- **LLaMma 3 Model**: Hosted on Groq Cloud, provides powerful language understanding capabilities.
 
 ## Contact
 For questions or support, please contact Aditya Saroha (mailto:adityasaroha456@gmail.com).
