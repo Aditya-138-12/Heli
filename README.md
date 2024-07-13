@@ -13,6 +13,7 @@ To install and set up the Heli Voice Powered Enquiry System, follow these steps:
 1. Clone the repository from GitHub:
 2. Install dependencies:
 3. Configure your environment variables and API keys as necessary.
+4. Make account on grok cloud, and set API key in you enviornment, also the step by step process is given on there website.
 
 ## Usage
 To use the Heli Voice Powered Enquiry System:
