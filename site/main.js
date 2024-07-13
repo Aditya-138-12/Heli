@@ -24,11 +24,16 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
 		let password;
 		let Lemail;
 		let Lpassword;
+
 		document.getElementById("signUpBtn").addEventListener("click", () => {
 
 		email = document.getElementById("alternateSignUpDivEmail").value;
 		password = document.getElementById("alternateSignUpDivPassword").value;
-
+		
+		const pwStrength = checkPasswordStrength.passwordStrength(`${password}`).value
+		console.log(pwStrength);
+		if(pwStrength == 'Too weak' || pwStrength == 'Weak'){console.log("Password Strength is Low"); alert(`Password Strength is ${pwStrength}`);}else{
+		
 		//console.log(userEmail, userPassword);
 
 		const auth = getAuth();
@@ -36,7 +41,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
 		.then((userCredential) => {
 		// Signed up 
 		const user = userCredential.user;
-		alert ("User Registered Sucessfully!!");
+		
+		
+		
 		// ...
 		})
 		.catch((error) => {
@@ -45,7 +52,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
 		alert ("Faced Error While Registering the User.");
 		// ..
 		});
+		
+		}
+		
 		});
+
+
 		document.getElementById("signInBtn").addEventListener("click", () => {
 
 		Lemail = document.getElementById("alternateSignUpDivEmail").value;
