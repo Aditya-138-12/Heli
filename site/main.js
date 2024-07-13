@@ -36,11 +36,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
 		.then((userCredential) => {
 		// Signed up 
 		const user = userCredential.user;
+		alert ("User Registered Sucessfully!!");
 		// ...
 		})
 		.catch((error) => {
 		const errorCode = error.code;
 		const errorMessage = error.message;
+		alert ("Faced Error While Registering the User.");
 		// ..
 		});
 		});
