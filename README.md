@@ -36,7 +36,7 @@ We welcome contributions to enhance the Heli Voice Powered Enquiry System. Follo
 This project is not Licensed!!!
 
 ## Credits
-- **LLaMma 3 Model**: Hosted on Groq Cloud, provides powerful language understanding capabilities.
+- **LLaMma 3 by Meta**: Hosted on Groq Cloud, provides powerful language understanding capabilities.
 
 ## Contact
 For questions or support, please contact Aditya Saroha (mailto:adityasaroha456@gmail.com).
